@@ -20,7 +20,7 @@ function randomNumber() {
   for (i = 0; i < numbersToGenerate; i++) {
     do {
       numbersRandom = Math.floor(Math.random() * 100) + 1;
-    } while (!numbers[i] === numbersRandom);
+    } while (numbers.includes(numbersRandom));
     numbers.push(numbersRandom);
     numberElement.innerHTML += ` <div class="mx-5">${numbers[i]}</div>`;
   }
