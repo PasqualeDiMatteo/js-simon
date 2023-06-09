@@ -9,7 +9,7 @@ const message = document.getElementById("message");
 
 // Dichiarazioni
 const numbersToGenerate = 5;
-let seconds = 5;
+let seconds = 30;
 countdownElement.innerText = seconds;
 let numberUser = [];
 let numbers = [];
@@ -46,6 +46,6 @@ let countdown = setInterval(() => {
       }
       console.log(numberUser);
       message.innerHTML = `Hai totalizzato ${score} punti!`;
-    }, 1000);
+    }, 200);
   }
 }, 1000);
