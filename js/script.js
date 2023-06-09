@@ -38,7 +38,7 @@ let countdown = setInterval(() => {
     cardElement.classList.add("d-none");
     setTimeout(function () {
       for (i = 0; i < numbersToGenerate; i++) {
-        let valueUser = parseInt(prompt("Dammi i numeri"));
+        let valueUser = parseInt(prompt("Seleziona un numero da 1 a 99"));
         numberUser.push(valueUser);
         if (numberUser.includes(numbers[i])) {
           score++;
